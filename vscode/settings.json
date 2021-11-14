@@ -1,0 +1,51 @@
+{
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "notebook.lineNumbers": "on",
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": -1,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.trimTrailingWhitespace": true,
+
+  "omnisharp.enableEditorConfigSupport": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editor.closeOnFileDelete": true,
+  "files.trimFinalNewlines": true,
+  "editor.suggestSelection": "first",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[javascript]": {
+  //   "editor.formatOnSave": false
+  // }
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+
+  "python.autoComplete.addBrackets": true,
+
+  "editor.suggest.insertMode": "replace",
+  "workbench.colorTheme": "Darcula",
+  "csharp.format.enable": true,
+  "editor.fontSize": 24,
+  "debug.console.fontSize": 24,
+  "terminal.integrated.fontSize": 24,
+  "tailwindCSS.rootFontSize": 24,
+  "markdown.preview.fontSize": 24,
+  "scm.inputFontSize": 24,
+  "omnisharp.enableDecompilationSupport": true,
+  "omnisharp.enableImportCompletion": true,
+  // "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.maxFindSymbolsItems": 100,
+  "omnisharp.organizeImportsOnFormat": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "problems.decorations.enabled": false,
+  "outline.problems.badges": false,
+  "problems.autoReveal": false,
+  "scss.lint.emptyRules": "ignore",
+  "less.lint.emptyRules": "ignore",
+  "css.lint.emptyRules": "ignore"
+}
