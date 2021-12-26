@@ -47,5 +47,6 @@
   "problems.autoReveal": false,
   "scss.lint.emptyRules": "ignore",
   "less.lint.emptyRules": "ignore",
-  "css.lint.emptyRules": "ignore"
+  "css.lint.emptyRules": "ignore",
+  "workbench.editor.enablePreview": false
 }
