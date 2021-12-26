@@ -1,0 +1,70 @@
+Host semse
+	HostName semse2.f4.htw-berlin.de
+	User flo
+## HTW Hosts ##
+Host mpc-server.f4.htw-berlin.de
+	User local
+Host mpc-client??
+	User local
+	ProxyCommand ssh -W %h:%p mpc-server.f4.htw-berlin.de
+	#ProxyJump mpc-server.f4.htw-berlin.de
+Host swift-manage-host
+	User ansible
+	HostName 10.0.0.201
+	# %p = used port (default=22)
+	# %h = used hostname
+	#ProxyJump mpc-server.f4.htw-berlin.de
+	ProxyCommand ssh -W 10.0.0.201:22 mpc-server.f4.htw-berlin.de
+Host 172.16.100.* *.maas
+	User ubuntu
+	ProxyCommand ssh -W %h:%p swift-manage-host
+
+Host home
+        HostName 192.168.2.166
+        User ancube_main
+
+Host desy
+	HostName sose16fp-openstack.f4.htw-berlin.de
+	User flo
+
+Host desy2
+ProxyCommand ssh desy nc node02 22
+
+Host desy3
+ProxyCommand ssh desy nc node03 22
+
+Host desy4
+ProxyCommand ssh desy nc node04 22
+
+Host desy-vm-on-node-?
+        User vagrant
+#	LocalForward 127.0.0.1:8080 127.0.0.1:8080
+#        LocalForward 127.0.0.1:8081 127.0.0.1:8081
+#        LocalForward 127.0.0.1:4040 127.0.0.1:4040
+#        LocalForward 127.0.0.1:8888 127.0.0.1:8888
+# ssh -L 127.0.0.1:8080:10.0.0.10:8080 desy-vm-on-node-1
+# ssh -L 127.0.0.1:8081:10.0.0.11:8081 desy-vm-on-node-2
+	ProxyCommand ssh desy nc %h %p
+
+Host mpc-vm-on-node-*
+        User vagrant
+#       LocalForward 127.0.0.1:8080 127.0.0.1:8080
+#        LocalForward 127.0.0.1:8081 127.0.0.1:8081
+#        LocalForward 127.0.0.1:4040 127.0.0.1:4040
+#        LocalForward 127.0.0.1:8888 127.0.0.1:8888
+# ssh -L 127.0.0.1:8080:10.0.0.10:8080 desy-vm-on-node-1
+# ssh -L 127.0.0.1:8081:10.0.0.11:8081 desy-vm-on-node-2
+	ProxyCommand ssh -W %h:%p mpc-server.f4.htw-berlin.de
+
+Host 10.0.0.??
+        User vagrant
+        ProxyCommand ssh -W %h:%p mpc-server.f4.htw-berlin.de
+
+
+Host pumpkin*
+	HostName %h.f4.htw-berlin.de
+	User s0558101
+
+Host avocado
+	HostName avocado01.f4.htw-berlin.de
+	User s0558101

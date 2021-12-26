@@ -1,0 +1,11 @@
+# alias htw_swift_host='ssh -L 127.0.0.1:5240:127.0.0.1:5240 ansible@swift-manage-host'
+# alias htw_rancher='ssh -L 127.0.0.1:8000:127.0.0.1:8000 ubuntu@rancher-server.maas'
+# alias htw_rancher01='ssh -L 127.0.0.1:54531:127.0.0.1:54531 ubuntu@rancher-client01.maas'
+# alias htw_rancher01='ssh -L 127.0.0.1:50070:127.0.0.1:50070 -L 127.0.0.1:8080:127.0.0.1:8080 -L 127.0.0.1:4040:127.0.0.1:4040 -L 127.0.0.1:$
+# alias htw_mpc01='ssh mpc-client01'
+
+# AVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/javac
+# source <(kubectl completion bash)
+
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
