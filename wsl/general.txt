@@ -1,0 +1,16 @@
+# run specific distro
+wsl -d Ubuntu-18.04
+
+# convert newline from windows to linux
+git config --global core.autocrlf true
+
+# get dns ipv4
+Get-DnsClientServerAddress -AddressFamily IPv4 | Select-Object -ExpandProperty ServerAddresses
+
+service docker start
+
+# gets windows path from wsl
+wslpath -w .
+
+# open windows explorer at wsl path
+explorer.exe .
