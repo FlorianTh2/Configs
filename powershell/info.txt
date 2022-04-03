@@ -1,0 +1,10 @@
+installed modules:
+	-ps-readline
+	-get-childitemcolor
+
+
+path: C:\Users\Florian\Documents\PowerShell\
+	-Microsoft.PowerShell_profile.ps1
+	-profile.ps1
+
+path variable: $profile
