@@ -1,6 +1,9 @@
 installed modules:
+	-app-installer
 	-ps-readline
 	-get-childitemcolor
+
+powershellgallery
 
 
 path: C:\Users\Florian\Documents\PowerShell\
