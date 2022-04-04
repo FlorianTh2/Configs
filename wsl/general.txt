@@ -14,3 +14,33 @@ wslpath -w .
 
 # open windows explorer at wsl path
 explorer.exe .
+
+# activate wsl / wsl2
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform, Microsoft-Windows-Subsystem-Linux
+# reboot
+
+# get wsl version
+wsl -l -v
+
+wsl --set-default-version 2
+
+wsl --list --online
+
+# show all installed versions
+wsl -l
+
+# -d for distro
+wsl --install -d Ubuntu-20.04
+
+wsl -s Ubuntu-20.04
+
+# deinstall distro
+wsl --unregister Ubuntu
+
+# check distor version
+lsb_release -a
+sudo apt update
+sudo apt upgrade -y
+
+wsl2 fast: ~/*
+wsl2 slow: /mnt/*
