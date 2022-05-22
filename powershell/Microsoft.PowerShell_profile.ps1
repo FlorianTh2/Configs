@@ -10,6 +10,6 @@ Import-Module Get-ChildItemColor
 
 function prompt
 {
-    Write-Host $($executionContext.SessionState.Path.CurrentLocation) -ForegroundColor Blue -NoNewline
+    Write-Host $($executionContext.SessionState.Path.CurrentLocation) -ForegroundColor Cyan -NoNewline
     "$('>' * ($nestedPromptLevel + 1)) "
 }
