@@ -11,5 +11,5 @@ Import-Module Get-ChildItemColor
 function prompt
 {
     $ESC = "`e"
-    "$ESC[36m$($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) $ESC[0m"
+    "$ESC[36m$($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) "
 }
